@@ -1,0 +1,24 @@
+AUTOKOPANIE SPEED - komenda /ak speed 0-10
+
+To DODATEK do Twojego moda AutoKopanie. Wrzucasz go do folderu mods RAZEM
+ze starym autokopanie-1_0_0.jar (nic nie usuwasz).
+
+KOMENDY
+  /ak speed        - pokazuje aktualna szybkosc
+  /ak speed 0..10  - ustawia szybkosc (0 = najwolniej, 5 = domyslna, 10 = szybko)
+
+CO ZMIENIA
+Tempo celowania i przelaczania miedzy blokami (obrot glowy, czas reakcji,
+tryb szybki od poziomu 9). Sam czas niszczenia bloku zalezy od narzedzia
+i enchantow (Efficiency, Haste), tego mod nie zmienia.
+
+BUDOWANIE
+Wszystkie pliki sa PLASKO (bez folderow), poza .github.
+1. Nowe repo na GitHubie, np. autokopanie-speed.
+2. Add file -> Upload files, przeciagnij: AkSpeed.java, fabric.mod.json,
+   build.gradle, gradle.properties, settings.gradle, Commit changes.
+3. Add file -> Create new file, nazwa: .github/workflows/build.yml
+   i wklej zawartosc pliku .github/workflows/build.yml z tego zipa.
+4. Actions -> poczekaj na zielony ptaszek -> Artifacts -> autokopanie-speed.
+5. Rozpakuj, jar wrzuc do .minecraft/mods obok autokopanie-1_0_0.jar
+   (potrzebny tez Fabric API).
